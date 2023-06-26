@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.5.0
       - name: Run Docker Action
-        uses: ./github/action/hello-world-docker-action
+        id: hello-action
+        uses: ./.github/actions/hello-world-docker-action
         with:
-          who-to-greet: @super-linters
-      - name: Print Outputs 
+          who-to-greet: super-linters
+      - name: Print Outputs
+        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello""
