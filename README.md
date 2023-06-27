@@ -19,3 +19,4 @@ https://github.blog/2023-02-02-enabling-branch-deployments-through-issueops-with
 https://github.com/github/docs/blob/main/.github/workflows/triage-issue-comments.yml
 https://github.com/actions/runner-images
 https://github.com/rajbos/actions-marketplace
+https://github.com/ps-actions-sandbox/actions-fundamentals-epo/blob/main/hol/04-Reusable-workflows.md
